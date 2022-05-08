@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "files",
@@ -92,10 +92,54 @@
           "cssFilePath": "plasmic/todo_mvc/PlasmicToggleButton.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "jm-lBKIQa-",
+          "name": "TestPage",
+          "type": "managed",
+          "projectId": "5mf52pddX4JykqxN3idS7N",
+          "renderModuleFilePath": "plasmic/todo_mvc/PlasmicTestPage.tsx",
+          "importSpec": {
+            "modulePath": "TestPage.tsx"
+          },
+          "cssFilePath": "plasmic/todo_mvc/PlasmicTestPage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "op352L2TJk0",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "5mf52pddX4JykqxN3idS7N",
+          "renderModuleFilePath": "plasmic/todo_mvc/PlasmicButton.tsx",
+          "importSpec": {
+            "modulePath": "Button.tsx"
+          },
+          "cssFilePath": "plasmic/todo_mvc/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
         }
       ],
-      "icons": [],
-      "images": [],
+      "icons": [
+        {
+          "id": "UC8V23cLoCS",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/todo_mvc/icons/PlasmicIcon__Checksvg.tsx"
+        },
+        {
+          "id": "4DjTyqmiBWb",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/todo_mvc/icons/PlasmicIcon__Icon.tsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "wDrSaaJ2f",
+          "name": "68747470733a2f2f6968312e726564627562626c652e6e65742f696d6167652e313037363638373036362e303731362f73742c736d616c6c2c353037783530372d7061642c363030783630302c6638663866382e6a7067.jpeg",
+          "filePath": "plasmic/todo_mvc/images/_68747470733A2F2F6968312E726564627562626C652E6E65742F696D6167652E313037363638373036362E303731362F73742C736D616C6C2C353037783530372D7061642C363030783630302C6638663866382E6A7067Jpeg.jpeg"
+        }
+      ],
       "indirect": false,
       "globalContextsFilePath": "",
       "codeComponents": []
@@ -108,6 +152,12 @@
         "name": "Theme",
         "projectId": "5mf52pddX4JykqxN3idS7N",
         "contextFilePath": "plasmic/todo_mvc/PlasmicGlobalVariant__Theme.tsx"
+      },
+      {
+        "id": "OZDSll_I_X1k5",
+        "name": "Screen",
+        "projectId": "5mf52pddX4JykqxN3idS7N",
+        "contextFilePath": "plasmic/todo_mvc/PlasmicGlobalVariant__Screen.tsx"
       }
     ]
   },

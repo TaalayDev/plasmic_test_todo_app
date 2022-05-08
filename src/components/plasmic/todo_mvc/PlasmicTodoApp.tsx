@@ -34,6 +34,7 @@ import {
 import Header from "../../Header"; // plasmic-import: Jz4LsPFDnrC9P/component
 import Task from "../../Task"; // plasmic-import: lL-gA_SHENuq8/component
 import Footer from "../../Footer"; // plasmic-import: aIVrGH9qBMI5z/component
+import Button from "../../Button"; // plasmic-import: op352L2TJk0/component
 
 import { ThemeValue, useTheme } from "./PlasmicGlobalVariant__Theme"; // plasmic-import: ebQNMa1O0ncHo/globalVariant
 
@@ -41,6 +42,9 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_todo_mvc.module.css"; // plasmic-import: 5mf52pddX4JykqxN3idS7N/projectcss
 import sty from "./PlasmicTodoApp.module.css"; // plasmic-import: sit8l33f_8L0V/css
+
+import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: UC8V23cLoCS/icon
+import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: 4DjTyqmiBWb/icon
 
 export type PlasmicTodoApp__VariantMembers = {
   state: "empty";
@@ -65,6 +69,7 @@ export type PlasmicTodoApp__OverridesType = {
   tasksContainer?: p.Flex<"div">;
   footer?: p.Flex<typeof Footer>;
   fakeStack?: p.Flex<"div">;
+  button?: p.Flex<typeof Button>;
 };
 
 export interface DefaultTodoAppProps {
@@ -282,6 +287,13 @@ function PlasmicTodoApp__RenderFunc(props: {
               </div>
             ) : null}
           </div>
+
+          <Button
+            data-plasmic-name={"button"}
+            data-plasmic-override={overrides.button}
+            className={classNames("__wab_instance", sty.button)}
+            link={"/test-page" as const}
+          />
         </div>
       </div>
     </React.Fragment>
@@ -296,14 +308,16 @@ const PlasmicDescendants = {
     "header",
     "tasksContainer",
     "footer",
-    "fakeStack"
+    "fakeStack",
+    "button"
   ],
   appTitle: ["appTitle"],
   appBody: ["appBody", "header", "tasksContainer", "footer"],
   header: ["header"],
   tasksContainer: ["tasksContainer"],
   footer: ["footer"],
-  fakeStack: ["fakeStack"]
+  fakeStack: ["fakeStack"],
+  button: ["button"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -316,6 +330,7 @@ type NodeDefaultElementType = {
   tasksContainer: "div";
   footer: typeof Footer;
   fakeStack: "div";
+  button: typeof Button;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -381,6 +396,7 @@ export const PlasmicTodoApp = Object.assign(
     tasksContainer: makeNodeComponent("tasksContainer"),
     footer: makeNodeComponent("footer"),
     fakeStack: makeNodeComponent("fakeStack"),
+    button: makeNodeComponent("button"),
 
     // Metadata about props expected for PlasmicTodoApp
     internalVariantProps: PlasmicTodoApp__VariantProps,

@@ -143,3 +143,22 @@
   box-shadow: 0px 0px 2px 0px rgba(255, 255, 255, 0.5);
   background: var(--token-0oeUpYuj6BxGy);
 }
+.button:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  margin-top: 47px;
+  margin-bottom: 30px;
+  width: 425px;
+}
+.svg__yo8U8 {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.svg__rSmWe {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
